@@ -1,0 +1,95 @@
+## Proposed Site Structure and Content
+
+### 1. Home
+
+* **Banner**: “Innovation and Entrepreneurship Development Center, IEM Salt Lake” 
+* **Year of Inception**: 2014 
+* **Quick Links** (navigation shortcuts to all other pages) 
+
+---
+
+### 2. About Us
+
+A brief introduction extracted from the homepage:
+
+> *“To promote research, product development and business incubation ecosystem for the students – fostering a trained and skilled student community that will work in cutting edge technologies and build new-age businesses to solve technological challenges for making the earth a better place for all living objects.”* 
+
+---
+
+### 3. Vision
+
+> **Vision Statement**
+> “To promote research, product development and business incubation ecosystem for the students – fostering a trained and skilled student community that will work in cutting edge technologies and build new-age businesses to solve technological challenges for making the earth a better place for all living objects.” 
+
+---
+
+### 4. Mission
+
+> **Mission Statement**
+> “The IEDC at IEM is committed to fostering a culture of research and product development among students. Its primary objective is to nurture a student community proficient in cutting-edge technologies through creativity and innovation. Under the mentorship of faculty members, students at the IEDC work in diverse fields including Robotics, IoT, RF & Microwave, Machine Learning, AI, Augmented Reality, Virtual Reality, and unmanned aerial and ground vehicles. The center strives for excellence by developing industry-ready products with significant real-world impact. Additionally, it focuses on cultivating entrepreneurship and tackling technological and business challenges faced by startups.” 
+
+---
+
+### 5. Team
+
+**Composition of the Centre** 
+
+* **Prof. Dr. Subhabrata Banerjee**
+
+  * Role: Coordinator, IEDC IEM Salt Lake & Professor, ECE Department
+  * Email: \[email protected]
+* **Prof. Dr. Indranil Maity**
+
+  * Role: Assistant-Coordinator, IEDC IEM Salt Lake & Associate Professor, ECE Department
+  * Email: \[email protected]
+
+---
+
+### 6. Start-Ups Incubated
+
+A table listing all companies currently incubated: 
+
+| Sl. No. | Company Name              | Objective                                                                        | Status (License)     |
+| ------- | ------------------------- | -------------------------------------------------------------------------------- | -------------------- |
+| 1       | Consultalk                | Online mock test series for WBJEE aspirants                                      | Trade License 006553 |
+| 2       | Rise & Shine Tech Library | Online books platform with AI-based recommendations                              | Trade License 006554 |
+| 3       | ChemGear                  | Precision laboratory equipment for scientific research                           | Trade License 006555 |
+| 4       | Storyline Stitches        | Online reselling of old books                                                    | Trade License 006556 |
+| 5       | PixelCraft Creations      | Creative graphic design solutions                                                | Trade License 006575 |
+| 6       | Celestial Courier         | Drone delivery services for food and groceries                                   | Trade License 006558 |
+| 7       | Use For Your Need (U-FYN) | Interactive online platform for doctor-patient appointments and health check-ups | Trade License 006578 |
+| 8       | Onrique                   | Light-weight jewelry design and manufacturing                                    | Trade License 006576 |
+
+---
+
+### 7. Gallery
+
+A rotating gallery showcasing recent activities: 
+
+* img1.jpg
+* img2.jpg
+* img3.jpg
+
+---
+
+### 8. Contact
+
+**Address:**
+Y-12 Salt Lake Electronics Complex, Sector-V, Salt Lake Electronics Complex, Kolkata – 700 091, West Bengal, India. 
+
+**Social Media:**
+
+* Twitter
+* Facebook
+* LinkedIn
+
+---
+
+## Quick Links & Footer
+
+Ensure every page includes a footer with:
+
+* Navigation links to all sections
+* Copyright notice: “© 2024 IEDC IEM Salt Lake. All Rights Reserved.” 
+
+[1]: https://iedc.iem.edu.in/ "IEDC – Innovation and Entrepreneurship Development Center"
