@@ -93,7 +93,7 @@ export default function Gallery() {
                   Be part of the next generation of innovators and entrepreneurs. Experience cutting-edge technology and build solutions for tomorrow.
                 </p>
                 <Link href="/contact">
-                  <Button className="bg-white text-iedc-blue hover:bg-gray-100 font-semibold">
+                  <Button className="bg-white text-black hover:bg-gray-100 font-semibold border-2 border-white">
                     Get In Touch
                   </Button>
                 </Link>

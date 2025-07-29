@@ -140,16 +140,16 @@ export default function Team() {
 
           {/* Call to Action */}
           <div className="mt-16 text-center">
-            <Card className="bg-gradient-to-r from-iedc-blue to-iedc-light-blue text-white max-w-3xl mx-auto">
+            <Card className="bg-white border-2 border-iedc-blue max-w-3xl mx-auto">
               <CardContent className="p-8">
-                <h3 className="text-2xl font-bold mb-4">Faculty Mentorship Program</h3>
-                <p className="text-lg leading-relaxed mb-6">
+                <h3 className="text-2xl font-bold mb-4 text-black">Faculty Mentorship Program</h3>
+                <p className="text-lg leading-relaxed mb-6 text-black">
                   Our distinguished faculty members provide dedicated mentorship to students, guiding them through 
                   cutting-edge research, innovation projects, and entrepreneurial ventures across multiple technology domains.
                 </p>
                 <div className="flex items-center justify-center">
-                  <ChevronRight className="w-5 h-5 mr-2" />
-                  <span className="font-semibold">Fostering the next generation of innovators and entrepreneurs</span>
+                  <ChevronRight className="w-5 h-5 mr-2 text-iedc-blue" />
+                  <span className="font-semibold text-black">Fostering the next generation of innovators and entrepreneurs</span>
                 </div>
               </CardContent>
             </Card>
