@@ -59,7 +59,7 @@ export default function Home() {
             </h1>
             <p className="text-xl md:text-2xl mb-4">IEM Salt Lake</p>
             <div className="inline-block bg-white bg-opacity-20 px-6 py-2 rounded-full">
-              <span className="text-lg font-semibold">Year of Inception: 2014</span>
+              <span className="text-lg font-semibold">Year of Inception: 2023</span>
             </div>
           </div>
         </div>
@@ -94,16 +94,16 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">10+</div>
-              <div className="text-lg">Years of Excellence</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">100+</div>
+              <div className="text-lg">Research Publications</div>
             </div>
             <div>
               <div className="text-4xl md:text-5xl font-bold mb-2">8</div>
               <div className="text-lg">Start-ups Incubated</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">100+</div>
-              <div className="text-lg">Students Mentored</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">25+</div>
+              <div className="text-lg">Research Grants</div>
             </div>
           </div>
         </div>

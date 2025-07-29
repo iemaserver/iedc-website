@@ -38,7 +38,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-300 mb-4">
-              Innovation and Entrepreneurship Development Center at IEM Salt Lake, fostering innovation and entrepreneurship since 2014.
+              Innovation and Entrepreneurship Development Center at IEM Salt Lake, fostering innovation and entrepreneurship since 2023.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-400 hover:text-white transition-colors">

@@ -101,6 +101,9 @@ Changelog:
 - July 01, 2025. Initial setup
 - July 29, 2025. Added Innovation & Research section with dropdown navigation (Startups, Patents, Research Grants, Publications, Projects)
 - July 29, 2025. Created Events section featuring Bengal E-Summit 2024 with image gallery and event details
+- July 29, 2025. Updated year of inception from 2014 to 2023
+- July 29, 2025. Enhanced Team section with faculty member photos and detailed information
+- July 29, 2025. Updated Home page statistics to reflect accurate data
 ```
 
 ## User Preferences
