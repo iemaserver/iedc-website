@@ -31,7 +31,7 @@ This is a full-stack web application for the Innovation and Entrepreneurship Dev
 
 ### Frontend Components
 - **Layout System**: Navigation, Footer, and responsive design
-- **Page Components**: Home, About, Vision, Mission, Team, Startups, Gallery, Contact
+- **Page Components**: Home, About, Team, Events, Gallery, Contact, Innovation section (Startups, Patents, Research Grants, Publications, Projects)
 - **UI Components**: Complete shadcn/ui component library implementation
 - **Responsive Design**: Mobile-first approach with adaptive layouts
 
@@ -99,6 +99,8 @@ This is a full-stack web application for the Innovation and Entrepreneurship Dev
 ```
 Changelog:
 - July 01, 2025. Initial setup
+- July 29, 2025. Added Innovation & Research section with dropdown navigation (Startups, Patents, Research Grants, Publications, Projects)
+- July 29, 2025. Created Events section featuring Bengal E-Summit 2024 with image gallery and event details
 ```
 
 ## User Preferences
