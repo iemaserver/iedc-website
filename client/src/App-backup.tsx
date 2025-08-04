@@ -5,13 +5,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Layout from "@/components/Layout";
 
-// Simple test component first
-function TestHome() {
+// Simple home component for testing
+function SimpleHome() {
   return (
     <div className="p-8">
       <h1 className="text-4xl font-bold text-black">IEDC IEM Salt Lake</h1>
       <p className="text-lg text-gray-600 mt-4">Innovation and Entrepreneurship Development Center</p>
-      <p className="text-sm text-green-600 mt-2">Website is loading successfully!</p>
     </div>
   );
 }
@@ -20,11 +19,10 @@ function Router() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" component={TestHome} />
+        <Route path="/" component={SimpleHome} />
         <Route>
           <div className="p-8">
             <h1 className="text-2xl font-bold text-black">Page Not Found</h1>
-            <p className="text-gray-600">Please use the navigation to go back to the home page.</p>
           </div>
         </Route>
       </Switch>
