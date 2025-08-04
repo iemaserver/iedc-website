@@ -2,6 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Lightbulb, Menu, X, ChevronDown } from "lucide-react";
 import iedcLogo from "@assets/IEDC_Logo_1753773593525.png";
+import iemLogo from "@assets/iem_logo_1754317566104.png";
+import uemLogo from "@assets/uem_logo_1754317566102.png";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
@@ -39,9 +41,11 @@ export default function Navigation() {
           {/* IEM Logo - Left */}
           <div className="flex-shrink-0">
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-xs font-bold text-gray-600">IEM</span>
-              </div>
+              <img 
+                src={iemLogo} 
+                alt="IEM Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
           </div>
 
@@ -104,9 +108,11 @@ export default function Navigation() {
           {/* UEM Logo - Right (Desktop) */}
           <div className="hidden md:block flex-shrink-0">
             <div className="flex items-center">
-              <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center">
-                <span className="text-xs font-bold text-gray-600">UEM</span>
-              </div>
+              <img 
+                src={uemLogo} 
+                alt="UEM Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
           </div>
 
