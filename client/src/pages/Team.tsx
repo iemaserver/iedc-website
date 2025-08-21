@@ -377,7 +377,7 @@ export default function Team() {
                   </Badge>
                 </div>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+                <div className="flex flex-wrap justify-center gap-6">
                   {committee.members.map((member, memberIndex) => {
                     // Define border color based on committee background color
                     let borderColor = 'border-gray-600';
@@ -394,7 +394,7 @@ export default function Team() {
                     else if (committee.bgColor === 'bg-slate-600') borderColor = 'border-slate-600';
                     
                     return (
-                      <Card key={memberIndex} className={`shadow-lg hover:shadow-xl transition-shadow border-l-4 ${borderColor} w-full max-w-xs`}>
+                      <Card key={memberIndex} className={`shadow-lg hover:shadow-xl transition-shadow border-l-4 ${borderColor} w-64 flex-shrink-0`}>
                         <CardContent className="p-6">
                           <div className="text-center">
                             {/* Student Photo */}
