@@ -369,7 +369,7 @@ export default function Team() {
             {/* Committee Sections */}
             {studentCommittees.map((committee, committeeIndex) => (
               <div key={committeeIndex} className="mb-12">
-                <div className="flex items-center mb-6">
+                <div className="flex items-center justify-center mb-6">
                   <div className={`w-4 h-4 ${committee.bgColor} rounded-full mr-3`}></div>
                   <h3 className="text-2xl font-bold iedc-gray">{committee.name}</h3>
                   <Badge className={`ml-4 ${committee.bgColor} text-white text-xs`}>
@@ -377,40 +377,56 @@ export default function Team() {
                   </Badge>
                 </div>
                 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                  {committee.members.map((member, memberIndex) => (
-                    <Card key={memberIndex} className={`shadow-lg hover:shadow-xl transition-shadow border-l-4 ${committee.bgColor.replace('bg-', 'border-')}`}>
-                      <CardContent className="p-6">
-                        <div className="text-center">
-                          {/* Student Photo */}
-                          <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 bg-gray-100">
-                            <img 
-                              src={member.image} 
-                              alt={member.name}
-                              className="w-full h-full object-cover"
-                            />
-                          </div>
-                          
-                          <h4 className="text-lg font-bold iedc-gray mb-2">{member.name}</h4>
-                          
-                          {/* Committees */}
-                          <div className="mb-3">
-                            <p className="font-semibold iedc-blue text-xs mb-2">Sub-Committee{member.committees.length > 1 ? 's' : ''}</p>
-                            <div className="flex flex-wrap justify-center gap-1">
-                              {member.committees.map((comm, commIndex) => (
-                                <Badge 
-                                  key={commIndex} 
-                                  className={`text-xs px-2 py-1 ${commIndex === 0 ? committee.bgColor + ' text-white' : 'bg-gray-200 text-gray-700'}`}
-                                >
-                                  {comm}
-                                </Badge>
-                              ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
+                  {committee.members.map((member, memberIndex) => {
+                    // Define border color based on committee background color
+                    let borderColor = 'border-gray-600';
+                    if (committee.bgColor === 'bg-red-600') borderColor = 'border-red-600';
+                    else if (committee.bgColor === 'bg-orange-600') borderColor = 'border-orange-600';
+                    else if (committee.bgColor === 'bg-blue-600') borderColor = 'border-blue-600';
+                    else if (committee.bgColor === 'bg-green-600') borderColor = 'border-green-600';
+                    else if (committee.bgColor === 'bg-yellow-600') borderColor = 'border-yellow-600';
+                    else if (committee.bgColor === 'bg-pink-600') borderColor = 'border-pink-600';
+                    else if (committee.bgColor === 'bg-purple-600') borderColor = 'border-purple-600';
+                    else if (committee.bgColor === 'bg-indigo-600') borderColor = 'border-indigo-600';
+                    else if (committee.bgColor === 'bg-teal-600') borderColor = 'border-teal-600';
+                    else if (committee.bgColor === 'bg-cyan-600') borderColor = 'border-cyan-600';
+                    else if (committee.bgColor === 'bg-slate-600') borderColor = 'border-slate-600';
+                    
+                    return (
+                      <Card key={memberIndex} className={`shadow-lg hover:shadow-xl transition-shadow border-l-4 ${borderColor} w-full max-w-xs`}>
+                        <CardContent className="p-6">
+                          <div className="text-center">
+                            {/* Student Photo */}
+                            <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 bg-gray-100">
+                              <img 
+                                src={member.image} 
+                                alt={member.name}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                            
+                            <h4 className="text-lg font-bold iedc-gray mb-2">{member.name}</h4>
+                            
+                            {/* Committees */}
+                            <div className="mb-3">
+                              <p className="font-semibold iedc-blue text-xs mb-2">Sub-Committee{member.committees.length > 1 ? 's' : ''}</p>
+                              <div className="flex flex-wrap justify-center gap-1">
+                                {member.committees.map((comm, commIndex) => (
+                                  <Badge 
+                                    key={commIndex} 
+                                    className={`text-xs px-2 py-1 ${commIndex === 0 ? committee.bgColor + ' text-white' : 'bg-gray-200 text-gray-700'}`}
+                                  >
+                                    {comm}
+                                  </Badge>
+                                ))}
+                              </div>
                             </div>
                           </div>
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
+                        </CardContent>
+                      </Card>
+                    );
+                  })}
                 </div>
               </div>
             ))}
