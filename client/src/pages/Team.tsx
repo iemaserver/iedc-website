@@ -1,10 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { User, Crown, Building, Users, ChevronRight } from "lucide-react";
-import drSatyajitImg from "@assets/Dr. Satyajit Chakrabarti_1753771851795.png";
-import drMalayImg from "@assets/Dr. Malay Gangopadhyay_1753771851795.png";
-import drSubhabrataImg from "@assets/Dr. Subhabrata Banerjee_1753771851796.png";
-import drIndranilImg from "@assets/Dr. Indranil Maity_1753771851795.png";
+import drSatyajitImg from "@assets/faculty_images/satyajit_chakrabarti.jpg";
+import drMalayImg from "@assets/faculty_images/malay_gangopadhyay.jpg";
+import drSubhabrataImg from "@assets/faculty_images/subhabrata_banerjee.jpg";
+import drIndranilImg from "@assets/faculty_images/indranil_maity.jpg";
 
 // Student images
 import sagnikChakrabortyImg from "@assets/student_images/sagnik_chakraborty.jpg";

@@ -114,6 +114,7 @@ Changelog:
 - August 21, 2025. Integrated authentic student data from Excel file with 27 students organized by sub-committee hierarchy
 - August 21, 2025. Updated student display: students now appear in ALL their sub-committees (32 total appearances across committees)
 - August 21, 2025. Corrected Snehangshu De committee membership: removed from Management, kept in Events and Social Media/Collaboration only
+- August 22, 2025. Updated faculty member images to use new faculty_images folder with properly named image files
 - August 04, 2025. Combined AI and ML into "AI & Machine Learning", updated "RF & Microwave" to "RF, MF & Antenna"
 - August 04, 2025. Reordered Innovation & Research navigation: Research Grants → Projects → Patents → Publications → Start-ups
 - August 04, 2025. Added authentic IEM and UEM logos to navigation
