@@ -17,26 +17,15 @@ const eventsByYear = {
       category: "Summit"
     },
     {
-      id: "tech-innovation-workshop-2024",
-      name: "Tech Innovation Workshop",
-      edition: "Annual Workshop",
-      date: "September 15, 2024",
+      id: "national-science-day-2024",
+      name: "National Science Day Celebration",
+      edition: "Annual Celebration",
+      date: "February 28, 2024",
       venue: "IEM Salt Lake Campus",
-      participants: "150+ students",
-      description: "Hands-on workshop on emerging technologies including AI, ML, and IoT for students and faculty.",
+      participants: "100+ participants",
+      description: "Celebrating the discovery of the Raman Effect by Sir C.V. Raman with scientific exhibitions, research presentations, and innovation contests.",
       status: "completed",
-      category: "Workshop"
-    },
-    {
-      id: "startup-pitch-competition-2024",
-      name: "Startup Pitch Competition",
-      edition: "Second Edition",
-      date: "November 20, 2024",
-      venue: "IEDC Auditorium",
-      participants: "80+ entrepreneurs",
-      description: "Platform for early-stage startups to pitch their ideas to investors and industry experts.",
-      status: "completed",
-      category: "Competition"
+      category: "Celebration"
     }
   ],
   2025: [
@@ -52,15 +41,15 @@ const eventsByYear = {
       category: "Summit"
     },
     {
-      id: "robotics-symposium-2025",
-      name: "International Robotics Symposium",
+      id: "triwizard-trials-2025",
+      name: "The Triwizard Trials",
       edition: "Inaugural Edition",
-      date: "March 2025 (TBA)",
-      venue: "IEM Salt Lake Campus",
+      date: "2025",
+      venue: "Godrej Genesis, Kolkata",
       participants: "Expected 200+ participants",
-      description: "International symposium on advanced robotics, automation, and AI applications.",
+      description: "A Hogwarts-inspired AI challenge with three magical events—Defence Against Dark Prompts, The Chambers of Agents, and Charms Without Wands.",
       status: "upcoming",
-      category: "Symposium"
+      category: "Competition"
     }
   ]
 };
@@ -71,6 +60,7 @@ const getCategoryColor = (category: string) => {
     case 'workshop': return 'bg-green-600';
     case 'competition': return 'bg-purple-600';
     case 'symposium': return 'bg-orange-600';
+    case 'celebration': return 'bg-cyan-600';
     default: return 'bg-gray-600';
   }
 };
@@ -124,10 +114,10 @@ export default function EventsOverview() {
                             {event.status.charAt(0).toUpperCase() + event.status.slice(1)}
                           </Badge>
                         </div>
-                        
+
                         <h3 className="text-xl font-bold iedc-gray mb-2">{event.name}</h3>
                         <p className="text-sm text-gray-500 mb-3">{event.edition}</p>
-                        
+
                         <div className="space-y-2 mb-4">
                           <div className="flex items-center text-sm text-gray-600">
                             <Calendar className="h-4 w-4 mr-2 iedc-blue" />
@@ -142,11 +132,11 @@ export default function EventsOverview() {
                             {event.participants}
                           </div>
                         </div>
-                        
+
                         <p className="text-gray-600 text-sm mb-4 line-clamp-3">
                           {event.description}
                         </p>
-                        
+
                         {event.status === 'completed' && (
                           <Link href={`/events/${event.id}`}>
                             <div className="flex items-center justify-between p-3 bg-iedc-light-gray rounded-lg hover:bg-gray-200 transition-colors cursor-pointer">
@@ -155,8 +145,8 @@ export default function EventsOverview() {
                             </div>
                           </Link>
                         )}
-                        
-                        {event.status === 'upcoming' && event.id === 'bengal-e-summit-2025' && (
+
+                        {event.status === 'upcoming' && (event.id === 'bengal-e-summit-2025' || event.id === 'triwizard-trials-2025') && (
                           <Link href={`/events/${event.id}`}>
                             <div className="flex items-center justify-between p-3 bg-iedc-light-gray rounded-lg hover:bg-gray-200 transition-colors cursor-pointer">
                               <span className="text-sm font-medium iedc-gray">View Event Details</span>
@@ -165,7 +155,7 @@ export default function EventsOverview() {
                           </Link>
                         )}
 
-                        {event.status === 'upcoming' && event.id !== 'bengal-e-summit-2025' && (
+                        {event.status === 'upcoming' && event.id !== 'bengal-e-summit-2025' && event.id !== 'triwizard-trials-2025' && (
                           <div className="p-3 bg-blue-50 rounded-lg">
                             <span className="text-sm font-medium text-blue-800">More details coming soon</span>
                           </div>
@@ -184,7 +174,7 @@ export default function EventsOverview() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold iedc-gray mb-6">Stay Updated</h2>
           <p className="text-lg text-gray-600 mb-8">
-            Don't miss out on our upcoming events and opportunities. Follow us for the latest updates 
+            Don't miss out on our upcoming events and opportunities. Follow us for the latest updates
             on workshops, competitions, summits, and networking events.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

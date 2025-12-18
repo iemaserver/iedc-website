@@ -27,13 +27,6 @@ const patentData: AcademicYearData[] = [
         supportingFile: "Inertial Sensor Based Hand Gesture Recognition System Using SVM and Android Interface.pdf",
       },
       {
-        title: "AI BASE DEVICE FOR ANALYSING BIOMEDICAL IMAGES",
-        inventors: "Dr. Durgesh Kumar, Moloy Dhar, Dr. Priyanka Saha, Dr. Samarjit Roy, Sulagna Ray, Dr. Tanima Bhowmik, Sutapa Ray, Dr. Emona Datta, Bipasha Guha Roy, Dr. Deepsubhra Guha Roy",
-        applicationNumber: "6394893",
-        status: "Granted",
-        supportingFile: "AI BASE DEVICE FOR ANALYSING BIOMEDICAL IMAGES.pdf",
-      },
-      {
         title: "SMALLEST ISOSCELES TRIANGULAR MICROSTRIP PATCH ANTENNA FOR WLAN APPLICATION",
         inventors: "Dr. Murari Shaw, Dr. Malay Gangopadhyaya",
         applicationNumber: "201931008854",
@@ -85,11 +78,10 @@ export default function InnovationPatents() {
                   <Card key={index} className="shadow-md hover:shadow-lg transition-shadow border-l-4 border-iedc-blue">
                     <CardContent className="p-6">
                       <div className="mb-4">
-                        <Badge className={`mb-3 ${
-                          patent.status === "Granted"
+                        <Badge className={`mb-3 ${patent.status === "Granted"
                             ? "bg-green-100 text-green-800"
                             : "bg-blue-100 text-blue-800"
-                        }`}>
+                          }`}>
                           {patent.status === "Granted" ? (
                             <CheckCircle2 className="w-3 h-3 mr-1" />
                           ) : (

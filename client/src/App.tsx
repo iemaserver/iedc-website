@@ -10,8 +10,8 @@ import Team from "@/pages/Team";
 import EventsOverview from "@/pages/events/EventsOverview";
 import BengalESummit2024 from "@/pages/events/BengalESummit2024";
 import BengalESummit2025 from "@/pages/events/BengalESummit2025";
-import TechInnovationWorkshop2024 from "@/pages/events/TechInnovationWorkshop2024";
-import StartupPitchCompetition2024 from "@/pages/events/StartupPitchCompetition2024";
+import TriWizardTrials2025 from "@/pages/events/TriWizardTrials2025";
+import NationalScienceDay2024 from "@/pages/events/NationalScienceDay2024";
 import Gallery from "@/pages/Gallery";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
@@ -34,8 +34,8 @@ function Router() {
         <Route path="/events" component={EventsOverview} />
         <Route path="/events/bengal-e-summit-2024" component={BengalESummit2024} />
         <Route path="/events/bengal-e-summit-2025" component={BengalESummit2025} />
-        <Route path="/events/tech-innovation-workshop-2024" component={TechInnovationWorkshop2024} />
-        <Route path="/events/startup-pitch-competition-2024" component={StartupPitchCompetition2024} />
+        <Route path="/events/triwizard-trials-2025" component={TriWizardTrials2025} />
+        <Route path="/events/national-science-day-2024" component={NationalScienceDay2024} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
         <Route path="/innovation/startups" component={InnovationStartups} />

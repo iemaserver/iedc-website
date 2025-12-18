@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { MapPin, Phone, Mail, Share2 } from "lucide-react";
-import { FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaTwitter, FaFacebook, FaLinkedin } from "react-icons/fa";
 import { useToast } from "@/hooks/use-toast";
 
 export default function Contact() {
@@ -25,7 +25,7 @@ export default function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Basic validation
     if (!formData.firstName || !formData.lastName || !formData.email || !formData.subject || !formData.message) {
       toast({
@@ -52,7 +52,7 @@ export default function Contact() {
       title: "Message Sent!",
       description: "Thank you for your message. We'll get back to you soon.",
     });
-    
+
     // Reset form
     setFormData({
       firstName: "",
@@ -79,7 +79,7 @@ export default function Contact() {
             {/* Contact Information */}
             <div>
               <h2 className="text-3xl font-bold iedc-gray mb-8">Get In Touch</h2>
-              
+
               <div className="space-y-6">
                 {/* Address */}
                 <div className="flex items-start">
@@ -89,10 +89,11 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold iedc-gray mb-2">Address</h3>
                     <p className="text-gray-600">
-                      Y-12 Salt Lake Electronics Complex<br />
-                      Sector-V, Salt Lake Electronics Complex<br />
-                      Kolkata – 700 091<br />
-                      West Bengal, India
+                      Street Number 18, Block EP&GP<br />
+                      Sector V, IEM IEDC ECE, Godrej Genesis<br />
+                      5th Floor, Bidhannagar<br />
+                      North Twenty Four Parganas<br />
+                      West Bengal, India, 700091
                     </p>
                   </div>
                 </div>
@@ -104,7 +105,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold iedc-gray mb-2">Phone</h3>
-                    <p className="text-gray-600">+91 33 2357 2450</p>
+                    <p className="text-gray-600">+91 9433569949</p>
+                    <p className="text-gray-600">+91 98313 57968</p>
                   </div>
                 </div>
 
@@ -115,7 +117,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="text-lg font-semibold iedc-gray mb-2">Email</h3>
-                    <p className="text-gray-600">iedc@iemcal.com</p>
+                    <p className="text-gray-600">iedc.ece@iem.edu.in</p>
                   </div>
                 </div>
 
@@ -127,6 +129,9 @@ export default function Contact() {
                   <div>
                     <h3 className="text-lg font-semibold iedc-gray mb-2">Follow Us</h3>
                     <div className="flex space-x-4">
+                      <a href="https://www.instagram.com/iedc_ece/" target="_blank" rel="noopener noreferrer" className="iedc-blue hover:text-pink-600 transition-colors">
+                        <FaInstagram className="h-6 w-6" />
+                      </a>
                       <a href="#" className="iedc-blue hover:text-blue-600 transition-colors">
                         <FaTwitter className="h-6 w-6" />
                       </a>
@@ -177,7 +182,7 @@ export default function Contact() {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <Label htmlFor="email" className="block text-sm font-medium iedc-gray mb-2">
                       Email

@@ -1,43 +1,50 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import img1 from "@assets/bengal_e_summit_2025_1.jpg";
+import img2 from "@assets/bengal_e_summit_2025_2.jpg";
+import img3 from "@assets/bengal_e_summit_2025_3.jpg";
+import img4 from "@assets/bengal_e_summit_2025_4.jpg";
+import img5 from "@assets/bengal_e_summit_2025_5.jpg";
+import img6 from "@assets/bengal_e_summit_2025_6.jpg";
+import img7 from "@assets/bengal_e_summit_2025_7.jpg";
 
 const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    alt: "Students presenting startup pitch",
-    title: "Startup Pitch Day",
-    description: "Students presenting innovative business ideas",
+    src: img1,
+    alt: "Bengal E-Summit 2025 Inauguration",
+    title: "Inauguration Ceremony",
+    description: "Grand opening of Bengal E-Summit 2025",
   },
   {
-    src: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    alt: "AI and ML workshop session",
-    title: "AI/ML Workshop",
-    description: "Hands-on training in artificial intelligence",
+    src: img2,
+    alt: "Bengal E-Summit 2025 Investopia",
+    title: "Investopia Competition",
+    description: "Entrepreneurs pitching to investors",
   },
   {
-    src: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    alt: "Faculty mentorship session",
-    title: "Faculty Mentorship",
-    description: "Collaborative guidance sessions",
+    src: img3,
+    alt: "Bengal E-Summit 2025 Startup Expo",
+    title: "Startup Expo",
+    description: "Innovative prototypes on display",
   },
   {
-    src: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600",
-    alt: "IoT demonstration with sensors and devices",
-    title: "IoT Innovation",
-    description: "Internet of Things project showcase",
+    src: img4,
+    alt: "Bengal E-Summit 2025 Pitch Perfect",
+    title: "Pitch Perfect",
+    description: "Competitive pitching event",
   },
   {
-    src: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    alt: "Innovation awards ceremony",
-    title: "Innovation Awards",
-    description: "Recognizing outstanding achievements",
+    src: img5,
+    alt: "Bengal E-Summit 2025 Business Event",
+    title: "This is Buziness",
+    description: "Business simulation competition",
   },
   {
-    src: "https://images.unsplash.com/photo-1592478411213-6153e4ebc696?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
-    alt: "VR/AR technology demonstration",
-    title: "VR/AR Experience",
-    description: "Immersive technology exploration",
+    src: img6,
+    alt: "Bengal E-Summit 2025 Mind Master",
+    title: "Mind Master Quiz",
+    description: "Knowledge testing competition",
   },
 ];
 
@@ -57,13 +64,13 @@ export default function Gallery() {
           {/* Featured Image */}
           <div className="mb-12">
             <img
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&h=600"
-              alt="Students working on robotics projects in modern lab"
+              src={img7}
+              alt="Bengal E-Summit 2025 CHATJPG Event"
               className="w-full h-96 object-cover rounded-lg shadow-xl"
             />
             <div className="text-center mt-4">
-              <h3 className="text-xl font-semibold iedc-gray">Innovation Lab in Action</h3>
-              <p className="text-gray-600">Students collaborating on cutting-edge robotics projects</p>
+              <h3 className="text-xl font-semibold iedc-gray">Bengal E-Summit 2025</h3>
+              <p className="text-gray-600">Moments from our flagship entrepreneurship summit</p>
             </div>
           </div>
 
@@ -105,3 +112,4 @@ export default function Gallery() {
     </div>
   );
 }
+
