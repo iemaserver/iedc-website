@@ -404,14 +404,6 @@ const journalData: AcademicYearData[] = [
         journal: "Macromolecular Symposia",
         volume: "407, Issue 1",
       },
-      {
-        paper: "Crystallinity Study of Electrodeposited SnO₂ on FTO Substrate",
-        authors: "Agasti U., Karmakar S., Kundu S.K., Sarkar M., Chatterjee S.",
-        doi: "10.4028/p-5Z5LcE",
-        journal: "Key Engineering Materials",
-        volume: "980",
-        pages: "33-40",
-      },
     ],
   },
 ];

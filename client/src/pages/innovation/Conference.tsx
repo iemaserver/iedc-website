@@ -430,13 +430,6 @@ const conferenceData: AcademicYearData[] = [
         conference: "4th International conference on Interdisciplinary Research in Technology & Management (IRTM 2024)",
         date: "December 5-7, 2024",
       },
-      {
-        paper: "Advanced Attendance Monitoring: A Unified System Using QR Codes and Facial Recognition",
-        authors: "Pati S., Majumder A., Gangopadhyay M., Sen G., Chakraborty A.",
-        doi: "10.1109/IEMENTech65115.2025.10959151",
-        conference: "8th International Conference on Electronics, Materials Engineering & Nano-Technology(IEMENTech)",
-        date: "2025",
-      },
     ],
   },
   {

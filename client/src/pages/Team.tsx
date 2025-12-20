@@ -5,6 +5,9 @@ import drSatyajitImg from "@assets/faculty_images/satyajit_chakrabarti.jpg";
 import drMalayImg from "@assets/faculty_images/malay_gangopadhyay.jpg";
 import drSubhabrataImg from "@assets/faculty_images/subhabrata_banerjee.jpg";
 import drIndranilImg from "@assets/faculty_images/indranil_maity.jpg";
+import drSayanSarkarImg from "@assets/faculty_images/Sayan Sarkar.jpeg";
+import drSutanuGhoshImg from "@assets/faculty_images/Sutanu Ghosh.jpeg";
+import drGobindaSenImg from "@assets/faculty_images/Gobinda Sen.jpeg";
 
 // Student images
 import sagnikChakrabortyImg from "@assets/student_images/sagnik_chakraborty.jpg";
@@ -68,7 +71,32 @@ const facultyMembers = [
     icon: Users,
     bgColor: "bg-iedc-light-blue",
   },
+  {
+    name: "Dr. Sayan Sarkar",
+    designation: "Associate Professor",
+    bio: "Collaborates with Dr. Subhabrata Banerjee to manage IEDC activities, focusing on Sponsored Research, industry partnerships, and entrepreneurial training.",
+    image: drSayanSarkarImg,
+    icon: Users,
+    bgColor: "bg-orange-600",
+  },
+  {
+    name: "Dr. Sutanu Ghosh",
+    designation: "Associate Professor",
+    bio: "Collaborates with Dr. Subhabrata Banerjee to manage IEDC activities, focusing on Sponsored Research, industry partnerships, and entrepreneurial training.",
+    image: drSutanuGhoshImg,
+    icon: Users,
+    bgColor: "bg-teal-600",
+  },
+  {
+    name: "Dr. Gobinda Sen",
+    designation: "Associate Professor",
+    bio: "Collaborates with Dr. Subhabrata Banerjee to manage IEDC activities, focusing on Sponsored Research, industry partnerships, and entrepreneurial training.",
+    image: drGobindaSenImg,
+    icon: Users,
+    bgColor: "bg-cyan-600",
+  },
 ];
+
 
 // Student members organized by sub-committee hierarchy - students appear in ALL their committees
 const studentCommittees = [
@@ -84,7 +112,7 @@ const studentCommittees = [
     ]
   },
   {
-    name: "Hardware", 
+    name: "Hardware",
     bgColor: "bg-orange-600",
     members: [
       {
@@ -101,10 +129,10 @@ const studentCommittees = [
   },
   {
     name: "Management",
-    bgColor: "bg-blue-600", 
+    bgColor: "bg-blue-600",
     members: [
       {
-        name: "Aditi Rai", 
+        name: "Aditi Rai",
         committees: ["Management"],
         image: aditiRaiImg
       },
@@ -131,7 +159,7 @@ const studentCommittees = [
       },
       {
         name: "Arka Ghosh",
-        committees: ["Software", "Events Reports"], 
+        committees: ["Software", "Events Reports"],
         image: arkaGhoshImg
       },
       {
@@ -156,7 +184,7 @@ const studentCommittees = [
         image: prasunitaDeImg
       },
       {
-        name: "Ritabhasa Chowdhury", 
+        name: "Ritabhasa Chowdhury",
         committees: ["Inventory & Documentation"],
         image: ritabhasaChowdhuryImg
       }
@@ -185,7 +213,7 @@ const studentCommittees = [
   },
   {
     name: "Graphics",
-    bgColor: "bg-purple-600", 
+    bgColor: "bg-purple-600",
     members: [
       {
         name: "Rupsha Ghosal",
@@ -194,7 +222,7 @@ const studentCommittees = [
       },
       {
         name: "Nirmalya Kusum Ghosh",
-        committees: ["Graphics"], 
+        committees: ["Graphics"],
         image: nirmalyaKusumGhoshImg
       },
       {
@@ -214,7 +242,7 @@ const studentCommittees = [
     bgColor: "bg-indigo-600",
     members: [
       {
-        name: "Swastika Talukdar", 
+        name: "Swastika Talukdar",
         committees: ["Entrepreneurship", "Events Reports"],
         image: swastikaTalukdarImg
       },
@@ -241,7 +269,7 @@ const studentCommittees = [
       },
       {
         name: "Rumani Sadhukhan",
-        committees: ["Grant in Aid & Publications"], 
+        committees: ["Grant in Aid & Publications"],
         image: rumaniSadhukhanImg
       },
       {
@@ -272,7 +300,7 @@ const studentCommittees = [
       },
       {
         name: "Prayas Roy",
-        committees: ["Events"], 
+        committees: ["Events"],
         image: prayasRoyImg
       }
     ]
@@ -282,7 +310,7 @@ const studentCommittees = [
     bgColor: "bg-slate-600",
     members: [
       {
-        name: "Swastika Talukdar", 
+        name: "Swastika Talukdar",
         committees: ["Entrepreneurship", "Events Reports"],
         image: swastikaTalukdarImg
       },
@@ -316,7 +344,7 @@ export default function Team() {
           <h2 className="text-3xl font-bold text-center mb-12 iedc-gray">
             Faculty Members
           </h2>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {facultyMembers.map((member, index) => (
               <Card key={index} className="shadow-lg hover:shadow-xl transition-shadow border-l-4 border-iedc-blue">
@@ -325,14 +353,14 @@ export default function Team() {
                     {/* Faculty Photo */}
                     <div className="flex-shrink-0">
                       <div className="w-24 h-24 rounded-lg overflow-hidden bg-gray-100">
-                        <img 
-                          src={member.image} 
+                        <img
+                          src={member.image}
                           alt={member.name}
                           className="w-full h-full object-cover"
                         />
                       </div>
                     </div>
-                    
+
                     {/* Faculty Details */}
                     <div className="flex-1">
                       <div className="flex items-start justify-between mb-3">
@@ -343,12 +371,12 @@ export default function Team() {
                           <member.icon className="text-white h-4 w-4" />
                         </div>
                       </div>
-                      
+
                       <div className="mb-3">
                         <p className="font-semibold iedc-blue text-sm mb-1">Designation</p>
                         <p className="text-gray-700 text-sm">{member.designation}</p>
                       </div>
-                      
+
                       <div>
                         <p className="font-semibold iedc-blue text-sm mb-1">Bio</p>
                         <p className="text-gray-600 text-sm leading-relaxed">{member.bio}</p>
@@ -365,7 +393,7 @@ export default function Team() {
             <h2 className="text-3xl font-bold text-center mb-12 iedc-gray">
               Student Members
             </h2>
-            
+
             {/* Committee Sections */}
             {studentCommittees.map((committee, committeeIndex) => (
               <div key={committeeIndex} className="mb-12">
@@ -376,7 +404,7 @@ export default function Team() {
                     {committee.members.length} member{committee.members.length !== 1 ? 's' : ''}
                   </Badge>
                 </div>
-                
+
                 <div className="flex flex-wrap justify-center gap-6">
                   {committee.members.map((member, memberIndex) => {
                     // Define border color based on committee background color
@@ -392,29 +420,29 @@ export default function Team() {
                     else if (committee.bgColor === 'bg-teal-600') borderColor = 'border-teal-600';
                     else if (committee.bgColor === 'bg-cyan-600') borderColor = 'border-cyan-600';
                     else if (committee.bgColor === 'bg-slate-600') borderColor = 'border-slate-600';
-                    
+
                     return (
                       <Card key={memberIndex} className={`shadow-lg hover:shadow-xl transition-shadow border-l-4 ${borderColor} w-64 flex-shrink-0`}>
                         <CardContent className="p-6">
                           <div className="text-center">
                             {/* Student Photo */}
                             <div className="w-20 h-20 rounded-full overflow-hidden mx-auto mb-4 bg-gray-100">
-                              <img 
-                                src={member.image} 
+                              <img
+                                src={member.image}
                                 alt={member.name}
                                 className="w-full h-full object-cover"
                               />
                             </div>
-                            
+
                             <h4 className="text-lg font-bold iedc-gray mb-2">{member.name}</h4>
-                            
+
                             {/* Committees */}
                             <div className="mb-3">
                               <p className="font-semibold iedc-blue text-xs mb-2">Sub-Committee{member.committees.length > 1 ? 's' : ''}</p>
                               <div className="flex flex-wrap justify-center gap-1">
                                 {member.committees.map((comm, commIndex) => (
-                                  <Badge 
-                                    key={commIndex} 
+                                  <Badge
+                                    key={commIndex}
                                     className={`text-xs px-2 py-1 ${commIndex === 0 ? committee.bgColor + ' text-white' : 'bg-gray-200 text-gray-700'}`}
                                   >
                                     {comm}
@@ -438,7 +466,7 @@ export default function Team() {
               <CardContent className="p-8">
                 <h3 className="text-2xl font-bold mb-4 text-black">Mentorship Program</h3>
                 <p className="text-lg leading-relaxed mb-6 text-black">
-                  Our distinguished faculty members provide dedicated mentorship to students, guiding them through 
+                  Our distinguished faculty members provide dedicated mentorship to students, guiding them through
                   cutting-edge research, innovation projects, and entrepreneurial ventures across multiple technology domains.
                 </p>
                 <div className="flex items-center justify-center">

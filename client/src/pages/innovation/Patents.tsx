@@ -8,6 +8,7 @@ type Patent = {
   applicationNumber: string;
   status: "Published" | "Granted";
   supportingFile?: string;
+  supportingFiles?: string[];
 };
 
 type AcademicYearData = {
@@ -31,7 +32,11 @@ const patentData: AcademicYearData[] = [
         inventors: "Dr. Murari Shaw, Dr. Malay Gangopadhyaya",
         applicationNumber: "201931008854",
         status: "Granted",
-        supportingFile: "https://drive.google.com/file/d/1Esew30qmeX8Ax1wNWLnyOL5Bmzt6Inx5/view",
+        supportingFiles: [
+          "https://drive.google.com/file/d/1Esew30qmeX8Ax1wNWLnyOL5Bmzt6Inx5/view",
+          "https://drive.google.com/file/d/1AQSgF9WV0o4yOIukH8Dijlmif8VoXtzS/view?usp=sharing",
+          "https://drive.google.com/file/d/1ggpYG9saXyFOP86fwuKmKxY_KZryQAKc/view?usp=sharing"
+        ],
       },
       {
         title: "MIMLI: A Lightweight Block Cipher for IoT Resource Constrained Devices",
@@ -79,8 +84,8 @@ export default function InnovationPatents() {
                     <CardContent className="p-6">
                       <div className="mb-4">
                         <Badge className={`mb-3 ${patent.status === "Granted"
-                            ? "bg-green-100 text-green-800"
-                            : "bg-blue-100 text-blue-800"
+                          ? "bg-green-100 text-green-800"
+                          : "bg-blue-100 text-blue-800"
                           }`}>
                           {patent.status === "Granted" ? (
                             <CheckCircle2 className="w-3 h-3 mr-1" />
@@ -122,6 +127,24 @@ export default function InnovationPatents() {
                               <ExternalLink className="w-4 h-4 mr-1" />
                               View Supporting Document
                             </a>
+                          </div>
+                        )}
+
+                        {patent.supportingFiles && patent.supportingFiles.length > 0 && (
+                          <div className="mt-4 space-y-2">
+                            <p className="text-sm font-medium text-gray-700">Supporting Documents</p>
+                            {patent.supportingFiles.map((file, fileIndex) => (
+                              <a
+                                key={fileIndex}
+                                href={file}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center text-sm text-iedc-blue hover:text-iedc-dark-blue font-medium transition-colors mr-4"
+                              >
+                                <ExternalLink className="w-4 h-4 mr-1" />
+                                Document {fileIndex + 1}
+                              </a>
+                            ))}
                           </div>
                         )}
                       </div>
