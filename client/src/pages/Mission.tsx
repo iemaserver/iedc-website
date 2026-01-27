@@ -31,7 +31,7 @@ export default function Mission() {
                 <h2 className="text-2xl md:text-3xl font-bold iedc-gray mb-6">Mission Statement</h2>
               </div>
               <blockquote className="text-lg md:text-xl leading-relaxed iedc-gray text-center">
-                "The IEDC at IEM is committed to fostering a culture of research and product development among students. Its primary objective is to nurture a student community proficient in cutting-edge technologies through creativity and innovation. Under the mentorship of faculty members, students at the IEDC work in diverse fields including Robotics, IoT, RF & Microwave, Machine Learning, AI, Augmented Reality, Virtual Reality, and unmanned aerial and ground vehicles. The center strives to create an ecosystem that encourages entrepreneurship and innovation."
+                The IEDC at IEM is committed to fostering a culture of research and product development among students. Its primary objective is to nurture a student community proficient in cutting-edge technologies through creativity and innovation. Under the mentorship of faculty members, students at the IEDC work in diverse fields including Robotics, IoT, RF & Microwave, Machine Learning, AI, Augmented Reality, Virtual Reality, and unmanned aerial and ground vehicles. The center strives to create an ecosystem that encourages entrepreneurship and innovation.
               </blockquote>
             </CardContent>
           </Card>

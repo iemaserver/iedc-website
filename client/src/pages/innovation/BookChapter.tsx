@@ -31,20 +31,6 @@ const bookChapterData: AcademicYearData[] = [
         isbn: "978-81-9601-118-5",
       },
       {
-        paper: "A Little Dictionary of Data Structures: Building Blocks for Efficient Algorithms",
-        authors: "Banerjee S.",
-        publisher: "Gyanvi Publication",
-        year: "2024",
-        isbn: "978-81-9649-001-6",
-      },
-      {
-        paper: "Unveiling Big Data: Unlocking Insights",
-        authors: "Banerjee S., Banerjee B.",
-        publisher: "Gyanvi Publication",
-        year: "2024",
-        isbn: "978-81-9649-005-4",
-      },
-      {
         paper: "Utilization of Personalized PageRank for Protein–Protein Interaction Analysis for Identification of Potential Therapeutic Targets in Alzheimer's Disease",
         authors: "Sengupta A., Chakraborty S., Gangopadhyay M.",
         publisher: "Springer, Singapore",
@@ -52,37 +38,6 @@ const bookChapterData: AcademicYearData[] = [
         publication: "Proceedings of IEMTRONICS 2024",
         bookSeries: "Lecture Notes in Electrical Engineering, vol 1229",
         doi: "10.1007/978-981-97-4780-1_23",
-      },
-      {
-        paper: "Quantum Mechanics",
-        authors: "Goswami S., Ghosh M.",
-        publisher: "Gyanvi Publication",
-        year: "2024",
-        isbn: "978-81-9618-502-9",
-      },
-      {
-        paper: "Essential Equations: A Quick Reference for Physics Enthusiasts",
-        authors: "Goswami S.",
-        publisher: "Gyanvi Publication",
-        year: "2024",
-        isbn: "978-81-9618-501-2",
-      },
-      {
-        paper: "Implementing Artificial Intelligence and Machine Learning in Environmental Engineering: A Critical Analysis",
-        authors: "Maiti S.K., Chakraborty S., Chakraborty A.S., Das S.",
-        publisher: "Springer Nature",
-        year: "2024",
-        publication: "Big Data Analytics for Environmental Monitoring and Management",
-        pages: "165-181",
-        doi: "10.1007/978-981-97-4966-9_9",
-      },
-      {
-        paper: "Underwater Communication with Active Controlled Flux Compression Using Unipolar Pulsed Supply and Boost Converter Techniques",
-        authors: "Tarafdar B., Bhattacharjee S., Dutta Chowdhury A., Ghosh P., Samanta A.",
-        publisher: "Springer, Singapore",
-        year: "2025",
-        publication: "Intelligent Systems and Sustainable Computing. ICISSC 2024. Smart Innovation, Systems and Technologies, vol 421",
-        doi: "10.1007/978-981-97-6683-3_15",
       },
       {
         paper: "Heart Disease Prediction: A Comprehensive Machine Learning Approach Leveraging Data Balancing, Feature Selection, and Classification",
@@ -138,9 +93,8 @@ export default function InnovationBookChapter() {
                   <Card key={index} className="shadow-md hover:shadow-lg transition-shadow border-l-4 border-iedc-blue">
                     <CardContent className="p-6">
                       <div className="mb-4">
-                        <Badge className={`mb-3 ${
-                          publication.isbn ? "bg-purple-100 text-purple-800" : "bg-blue-100 text-blue-800"
-                        }`}>
+                        <Badge className={`mb-3 ${publication.isbn ? "bg-purple-100 text-purple-800" : "bg-blue-100 text-blue-800"
+                          }`}>
                           <BookOpen className="w-3 h-3 mr-1" />
                           {publication.isbn ? "Book" : "Book Chapter"}
                         </Badge>

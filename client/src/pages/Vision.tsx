@@ -22,7 +22,7 @@ export default function Vision() {
                 <h2 className="text-2xl md:text-3xl font-bold iedc-gray mb-6">Vision Statement</h2>
               </div>
               <blockquote className="text-lg md:text-xl leading-relaxed iedc-gray text-center">
-                "To promote research, product development and business incubation ecosystem for the students – fostering a trained and skilled student community that will work in cutting edge technologies and build new-age businesses to solve technological challenges for making the earth a better place for all living objects."
+                To promote research, product development and business incubation ecosystem for the students – fostering a trained and skilled student community that will work in cutting edge technologies and build new-age businesses to solve technological challenges for making the earth a better place for all living objects.
               </blockquote>
             </CardContent>
           </Card>

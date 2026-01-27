@@ -6,12 +6,12 @@ import {
 } from "lucide-react";
 
 const techAreas = [
-  { icon: Bot, title: "Robotics", description: "Advanced robotics systems and automation" },
-  { icon: Wifi, title: "IoT", description: "Internet of Things and connected devices" },
-  { icon: Radio, title: "RF & Antenna", description: "Radio frequency and antenna technology" },
-  { icon: Brain, title: "AI & Machine Learning", description: "Artificial Intelligence solutions and advanced ML algorithms" },
-  { icon: Microchip, title: "VLSI", description: "Very Large Scale Integration design and implementation" },
-  { icon: Signal, title: "Communications", description: "Modern communication systems and protocols" },
+  { icon: Bot, title: "Robotics", description: "Advanced robotics systems and automation using cutting-edge platforms like NVIDIA Jetson Nano and Jetson Thor. Building intelligent autonomous systems for real-world applications." },
+  { icon: Wifi, title: "IoT", description: "Internet of Things and connected devices powered by Raspberry Pi and other microcontrollers. Creating smart, interconnected solutions for homes, industries, and cities." },
+  { icon: Radio, title: "RF & Antenna", description: "Radio frequency and antenna technology for wireless communication systems. Designing and fabricating antennas for defense, 5G, and IoT applications." },
+  { icon: Brain, title: "AI & Machine Learning", description: "Artificial Intelligence, Machine Learning, Deep Learning, and Computer Vision solutions. Developing intelligent algorithms for healthcare, agriculture, and industrial applications." },
+  { icon: Microchip, title: "VLSI", description: "Very Large Scale Integration design and implementation for next-generation electronics. Creating efficient and compact integrated circuits for modern applications." },
+  { icon: Signal, title: "Communications", description: "Modern communication systems and protocols including 5G, satellite, and underwater communications. Advancing connectivity through innovative research." },
 ];
 
 export default function About() {
@@ -73,7 +73,7 @@ export default function About() {
           <Card className="bg-white shadow-lg mb-12">
             <CardContent className="p-8 md:p-12">
               <blockquote className="text-lg md:text-xl leading-relaxed iedc-gray text-center">
-                "To promote research, product development and business incubation ecosystem for the students – fostering a trained and skilled student community that will work in cutting edge technologies and build new-age businesses to solve technological challenges for making the earth a better place for all living objects."
+                To promote research, product development and business incubation ecosystem for the students – fostering a trained and skilled student community that will work in cutting edge technologies and build new-age businesses to solve technological challenges for making the earth a better place for all living objects.
               </blockquote>
             </CardContent>
           </Card>
@@ -85,7 +85,7 @@ export default function About() {
                   <Globe className="iedc-blue mr-3 h-6 w-6" />
                   Global Impact
                 </h3>
-                <p className="text-gray-600">Creating solutions that benefit all living beings on Earth through innovative technology.</p>
+                <p className="text-gray-600">Creating solutions that benefit all living beings on Earth through innovative technology. Our research addresses global challenges in healthcare, environment, and sustainability to make the world a better place.</p>
               </CardContent>
             </Card>
             <Card className="shadow-md">
@@ -94,7 +94,7 @@ export default function About() {
                   <GraduationCap className="iedc-blue mr-3 h-6 w-6" />
                   Student Development
                 </h3>
-                <p className="text-gray-600">Building a skilled community of students ready for tomorrow's challenges.</p>
+                <p className="text-gray-600">Building a skilled community of students ready for tomorrow's challenges. We nurture talent through hands-on projects, mentorship, and industry exposure to create future-ready engineers and entrepreneurs.</p>
               </CardContent>
             </Card>
             <Card className="shadow-md">
@@ -103,7 +103,7 @@ export default function About() {
                   <Cpu className="iedc-blue mr-3 h-6 w-6" />
                   Cutting-edge Tech
                 </h3>
-                <p className="text-gray-600">Working with the latest technologies to solve real-world problems.</p>
+                <p className="text-gray-600">Working with the latest technologies including AI, ML, Deep Learning, IoT, and Robotics to solve real-world problems. We leverage emerging tech stacks to build innovative products with tangible impact.</p>
               </CardContent>
             </Card>
             <Card className="shadow-md">
@@ -112,7 +112,7 @@ export default function About() {
                   <Handshake className="iedc-blue mr-3 h-6 w-6" />
                   Business Ecosystem
                 </h3>
-                <p className="text-gray-600">Creating a supportive environment for new-age business development.</p>
+                <p className="text-gray-600">Creating a supportive environment for new-age business development and startup incubation. We provide mentorship, resources, and industry connections to help students transform innovative ideas into successful ventures.</p>
               </CardContent>
             </Card>
           </div>
@@ -132,7 +132,7 @@ export default function About() {
           <Card className="bg-iedc-light-gray shadow-lg mb-12">
             <CardContent className="p-8 md:p-12">
               <blockquote className="text-lg md:text-xl leading-relaxed iedc-gray text-center">
-                "The IEDC ECE is committed to fostering a culture of research and product development among students. Its primary objective is to nurture a student community proficient in cutting-edge technologies through creativity and innovation. Under the mentorship of faculty members, students at the IEDC work in diverse fields including Robotics, IoT, RF & Microwave, Machine Learning, AI, Augmented Reality, Virtual Reality, and unmanned aerial and ground vehicles. The center strives for excellence by developing industry-ready products with significant real-world impact. Additionally, it focuses on cultivating entrepreneurship and tackling technological and business challenges faced by startups."
+                The IEDC ECE is committed to fostering a culture of research and product development among students. Its primary objective is to nurture a student community proficient in cutting-edge technologies through creativity and innovation. Under the mentorship of faculty members, students at the IEDC work in diverse fields including Robotics, IoT, RF & Microwave, Machine Learning, AI, Augmented Reality, Virtual Reality, and unmanned aerial and ground vehicles. The center strives for excellence by developing industry-ready products with significant real-world impact. Additionally, it focuses on cultivating entrepreneurship and tackling technological and business challenges faced by startups.
               </blockquote>
             </CardContent>
           </Card>

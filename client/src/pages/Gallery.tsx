@@ -19,7 +19,7 @@ const galleryImages = [
   {
     src: img2,
     alt: "Bengal E-Summit 2025 Investopia",
-    title: "Investopia Competition",
+    title: "Investopia",
     description: "Entrepreneurs pitching to investors",
   },
   {

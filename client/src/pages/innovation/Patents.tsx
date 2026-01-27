@@ -9,6 +9,8 @@ type Patent = {
   status: "Published" | "Granted";
   supportingFile?: string;
   supportingFiles?: string[];
+  registrationDate?: string;
+  isUKDesign?: boolean;
 };
 
 type AcademicYearData = {
@@ -32,11 +34,7 @@ const patentData: AcademicYearData[] = [
         inventors: "Dr. Murari Shaw, Dr. Malay Gangopadhyaya",
         applicationNumber: "201931008854",
         status: "Granted",
-        supportingFiles: [
-          "https://drive.google.com/file/d/1Esew30qmeX8Ax1wNWLnyOL5Bmzt6Inx5/view",
-          "https://drive.google.com/file/d/1AQSgF9WV0o4yOIukH8Dijlmif8VoXtzS/view?usp=sharing",
-          "https://drive.google.com/file/d/1ggpYG9saXyFOP86fwuKmKxY_KZryQAKc/view?usp=sharing"
-        ],
+        supportingFile: "https://drive.google.com/file/d/1Esew30qmeX8Ax1wNWLnyOL5Bmzt6Inx5/view",
       },
       {
         title: "MIMLI: A Lightweight Block Cipher for IoT Resource Constrained Devices",
@@ -51,6 +49,15 @@ const patentData: AcademicYearData[] = [
         applicationNumber: "202431065147 A",
         status: "Published",
         supportingFile: "PERSONALISED HEALTHCARE MACHINE LEARNING-DRIVEN WEARABLE SENSOR MONITORING AND CLASSIFICATION_202431065147 (1).pdf",
+      },
+      {
+        title: "THERMAL COMPRESS LUMBAR SUPPORT BELT",
+        inventors: "Suprava Jha, Mahek Khosla, Ishan Dutta, Dibyadarshi Das, Subhabrata Banerjee, Malay Gangopadhyay, Sanghamitra Poddar",
+        applicationNumber: "6407070",
+        status: "Granted",
+        registrationDate: "25 November 2024",
+        isUKDesign: true,
+        supportingFile: "https://drive.google.com/file/d/1ggpYG9saXyFOP86fwuKmKxY_KZryQAKc/view",
       },
     ],
   },
@@ -93,6 +100,7 @@ export default function InnovationPatents() {
                             <Clock className="w-3 h-3 mr-1" />
                           )}
                           {patent.status}
+                          {patent.isUKDesign && " (UK Design)"}
                         </Badge>
                         <h3 className="text-lg font-bold text-gray-800 mb-3 line-clamp-3">
                           {patent.title}
@@ -111,10 +119,22 @@ export default function InnovationPatents() {
                         <div className="flex items-start">
                           <FileText className="text-iedc-blue h-4 w-4 mt-1 mr-2 flex-shrink-0" />
                           <div>
-                            <p className="text-sm font-medium text-gray-700">Application Number</p>
+                            <p className="text-sm font-medium text-gray-700">
+                              {patent.isUKDesign ? "Design Number" : "Application Number"}
+                            </p>
                             <p className="text-sm text-gray-600">{patent.applicationNumber}</p>
                           </div>
                         </div>
+
+                        {patent.registrationDate && (
+                          <div className="flex items-start">
+                            <FileText className="text-iedc-blue h-4 w-4 mt-1 mr-2 flex-shrink-0" />
+                            <div>
+                              <p className="text-sm font-medium text-gray-700">Registration Date</p>
+                              <p className="text-sm text-gray-600">{patent.registrationDate}</p>
+                            </div>
+                          </div>
+                        )}
 
                         {patent.supportingFile && (
                           <div className="mt-4">

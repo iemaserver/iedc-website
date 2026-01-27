@@ -5,9 +5,6 @@ import drSatyajitImg from "@assets/faculty_images/satyajit_chakrabarti.jpg";
 import drMalayImg from "@assets/faculty_images/malay_gangopadhyay.jpg";
 import drSubhabrataImg from "@assets/faculty_images/subhabrata_banerjee.jpg";
 import drIndranilImg from "@assets/faculty_images/indranil_maity.jpg";
-import drSayanSarkarImg from "@assets/faculty_images/Sayan Sarkar.jpeg";
-import drSutanuGhoshImg from "@assets/faculty_images/Sutanu Ghosh.jpeg";
-import drGobindaSenImg from "@assets/faculty_images/Gobinda Sen.jpeg";
 
 // Student images
 import sagnikChakrabortyImg from "@assets/student_images/sagnik_chakraborty.jpg";
@@ -22,21 +19,17 @@ import saheliDebImg from "@assets/student_images/saheli_deb.jpg";
 import sayanChatterjeeImg from "@assets/student_images/sayan_chatterjee.jpg";
 import prasunitaDeImg from "@assets/student_images/prasunita_de.jpg";
 import ritabhasaChowdhuryImg from "@assets/student_images/ritabhasa_chowdhury.jpg";
-import sulagnRoyImg from "@assets/student_images/sulagna_roy.jpg";
-import sreshthaHiraImg from "@assets/student_images/sreshtha_hira.jpeg";
-import rupshaGhosalImg from "@assets/student_images/rupsha_ghosal.jpg";
-import nirmalyaKusumGhoshImg from "@assets/student_images/nirmalya_kusum_ghosh.jpg";
 import imanDasImg from "@assets/student_images/iman_das.jpeg";
 import anweshaGhoshImg from "@assets/student_images/anwesha_ghosh.jpg";
 import swastikaTalukdarImg from "@assets/student_images/swastika_talukdar.jpg";
-import adrikaLahiriImg from "@assets/student_images/adrika_lahiri.jpg";
-import sumedhaGhoshImg from "@assets/student_images/sumedha_ghosh.jpeg";
 import sangaBhattacharyaImg from "@assets/student_images/sanga_bhattacharya.png";
 import rumaniSadhukhanImg from "@assets/student_images/rumani_sadhukhan.png";
 import souptikBiswasImg from "@assets/student_images/souptik_biswas.jpeg";
 import tanishaChakrabartiImg from "@assets/student_images/tanisha_chakrabarti.png";
 import pratyushKumarDeyImg from "@assets/student_images/pratyush_kumar_dey.jpg";
 import prayasRoyImg from "@assets/student_images/prayas_roy.jpeg";
+import sujaanBhattacharyya from "@assets/student_images/sujaan_bhattacharyya.png";
+import sanketGhosh from "@assets/student_images/sanket_ghosh.jpeg";
 
 const facultyMembers = [
   {
@@ -70,30 +63,6 @@ const facultyMembers = [
     image: drIndranilImg,
     icon: Users,
     bgColor: "bg-iedc-light-blue",
-  },
-  {
-    name: "Dr. Sayan Sarkar",
-    designation: "Associate Professor",
-    bio: "Collaborates with Dr. Subhabrata Banerjee to manage IEDC activities, focusing on Sponsored Research, industry partnerships, and entrepreneurial training.",
-    image: drSayanSarkarImg,
-    icon: Users,
-    bgColor: "bg-orange-600",
-  },
-  {
-    name: "Dr. Sutanu Ghosh",
-    designation: "Associate Professor",
-    bio: "Collaborates with Dr. Subhabrata Banerjee to manage IEDC activities, focusing on Sponsored Research, industry partnerships, and entrepreneurial training.",
-    image: drSutanuGhoshImg,
-    icon: Users,
-    bgColor: "bg-teal-600",
-  },
-  {
-    name: "Dr. Gobinda Sen",
-    designation: "Associate Professor",
-    bio: "Collaborates with Dr. Subhabrata Banerjee to manage IEDC activities, focusing on Sponsored Research, industry partnerships, and entrepreneurial training.",
-    image: drGobindaSenImg,
-    icon: Users,
-    bgColor: "bg-cyan-600",
   },
 ];
 
@@ -171,6 +140,16 @@ const studentCommittees = [
         name: "Sayan Chatterjee",
         committees: ["Software", "Events Reports"],
         image: sayanChatterjeeImg
+      },
+      {
+        name: "Sujaan Bhattacharyya",
+        committees: ["Software"],
+        image: sujaanBhattacharyya
+      },
+      {
+        name: "Sanket Ghosh",
+        committees: ["Software"],
+        image: sanketGhosh
       }
     ]
   },
@@ -198,16 +177,6 @@ const studentCommittees = [
         name: "Snehangshu De",
         committees: ["Events", "Social Media / Collaboration"],
         image: snehangshuDeImg
-      },
-      {
-        name: "Sulagna Roy",
-        committees: ["Social Media / Collaboration"],
-        image: sulagnRoyImg
-      },
-      {
-        name: "Sreshtha Hira",
-        committees: ["Social Media / Collaboration", "Events Reports"],
-        image: sreshthaHiraImg
       }
     ]
   },
@@ -215,16 +184,6 @@ const studentCommittees = [
     name: "Graphics",
     bgColor: "bg-purple-600",
     members: [
-      {
-        name: "Rupsha Ghosal",
-        committees: ["Graphics"],
-        image: rupshaGhosalImg
-      },
-      {
-        name: "Nirmalya Kusum Ghosh",
-        committees: ["Graphics"],
-        image: nirmalyaKusumGhoshImg
-      },
       {
         name: "Iman Das",
         committees: ["Graphics"],
@@ -247,14 +206,14 @@ const studentCommittees = [
         image: swastikaTalukdarImg
       },
       {
-        name: "Adrika Lahiri",
+        name: "Souptik Biswas",
         committees: ["Entrepreneurship"],
-        image: adrikaLahiriImg
+        image: souptikBiswasImg
       },
       {
-        name: "Sumedha Ghosh",
+        name: "Tanisha Chakrabarti",
         committees: ["Entrepreneurship"],
-        image: sumedhaGhoshImg
+        image: tanishaChakrabartiImg
       }
     ]
   },
@@ -271,16 +230,6 @@ const studentCommittees = [
         name: "Rumani Sadhukhan",
         committees: ["Grant in Aid & Publications"],
         image: rumaniSadhukhanImg
-      },
-      {
-        name: "Souptik Biswas",
-        committees: ["Grant in Aid & Publications"],
-        image: souptikBiswasImg
-      },
-      {
-        name: "Tanisha Chakrabarti",
-        committees: ["Grant in Aid & Publications"],
-        image: tanishaChakrabartiImg
       }
     ]
   },
@@ -315,14 +264,14 @@ const studentCommittees = [
         image: swastikaTalukdarImg
       },
       {
-        name: "Sreshtha Hira",
-        committees: ["Social Media / Collaboration", "Events Reports"],
-        image: sreshthaHiraImg
-      },
-      {
         name: "Sayan Chatterjee",
         committees: ["Software", "Events Reports"],
         image: sayanChatterjeeImg
+      },
+      {
+        name: "Arka Ghosh",
+        committees: ["Software", "Events Reports"],
+        image: arkaGhoshImg
       }
     ]
   }
@@ -400,9 +349,6 @@ export default function Team() {
                 <div className="flex items-center justify-center mb-6">
                   <div className={`w-4 h-4 ${committee.bgColor} rounded-full mr-3`}></div>
                   <h3 className="text-2xl font-bold iedc-gray">{committee.name}</h3>
-                  <Badge className={`ml-4 ${committee.bgColor} text-white text-xs`}>
-                    {committee.members.length} member{committee.members.length !== 1 ? 's' : ''}
-                  </Badge>
                 </div>
 
                 <div className="flex flex-wrap justify-center gap-6">

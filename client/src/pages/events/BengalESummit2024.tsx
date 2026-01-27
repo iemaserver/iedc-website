@@ -26,7 +26,7 @@ const chiefGuests = [
 
 const highlights = [
   {
-    title: "Investopia Competition",
+    title: "Investopia",
     description: "A Shark Tank-style competition for startups and businesses where winners could secure funding and prizes.",
     icon: Trophy,
   },
@@ -61,7 +61,7 @@ const eventImages = [
   {
     src: event4,
     alt: "Business model presentation during Investopia",
-    caption: "Startup pitch presentation at Investopia competition"
+    caption: "Startup pitch presentation at Investopia"
   },
 ];
 
@@ -171,7 +171,7 @@ export default function BengalESummit2024() {
           <Card className="bg-iedc-blue text-white shadow-lg">
             <CardContent className="p-8 text-center">
               <Trophy className="h-16 w-16 mx-auto mb-4" />
-              <h3 className="text-2xl font-bold mb-4">Investopia Competition</h3>
+              <h3 className="text-2xl font-bold mb-4">Investopia</h3>
               <p className="text-lg mb-4">
                 Our flagship Shark Tank-style competition where innovative startups and businesses 
                 competed for funding and recognition.

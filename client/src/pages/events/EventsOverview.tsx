@@ -12,7 +12,7 @@ const eventsByYear = {
       date: "July 27–28, 2024",
       venue: "IEM Gurukul Campus",
       participants: "Over 500 attendees",
-      description: "A vibrant platform for knowledge sharing, networking, and investment opportunities featuring the flagship Investopia competition.",
+      description: "A vibrant platform for knowledge sharing, networking, and investment opportunities featuring the flagship Investopia.",
       status: "completed",
       category: "Summit"
     },
