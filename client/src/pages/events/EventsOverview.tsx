@@ -33,11 +33,11 @@ const eventsByYear = {
       id: "bengal-e-summit-2025",
       name: "Bengal E-Summit 2025",
       edition: "Second Edition",
-      date: "July 2025 (TBA)",
+      date: "July 2025",
       venue: "IEM Gurukul Campus",
-      participants: "Expected 800+ attendees",
+      participants: "800+ attendees",
       description: "Expanded edition focusing on sustainable innovation and green technology entrepreneurship.",
-      status: "upcoming",
+      status: "completed",
       category: "Summit"
     },
     {
@@ -46,10 +46,34 @@ const eventsByYear = {
       edition: "Inaugural Edition",
       date: "2025",
       venue: "Godrej Genesis, Kolkata",
-      participants: "Expected 200+ participants",
+      participants: "200+ participants",
       description: "A Hogwarts-inspired AI challenge with three magical events—Defence Against Dark Prompts, The Chambers of Agents, and Charms Without Wands.",
-      status: "upcoming",
+      status: "completed",
       category: "Competition"
+    }
+  ],
+  2026: [
+    {
+      id: "fdp-microwave-2026",
+      name: "FDP: Microwave, Antenna & Communication",
+      edition: "Five Day Program",
+      date: "January 8–16, 2026",
+      venue: "IEM, Kolkata",
+      participants: "Faculty members",
+      description: "Faculty Development Program on Frontier Research in Microwave, Antenna and Communication organized by Dept. of ECE in collaboration with HRDC and IEDC-ECE.",
+      status: "completed",
+      category: "Workshop"
+    },
+    {
+      id: "fdp-iot-2026",
+      name: "FDP: IoT & Communication Technologies",
+      edition: "Five Day Program",
+      date: "February 19–25, 2026",
+      venue: "IEM, Kolkata",
+      participants: "Faculty members",
+      description: "Faculty Development Program on Integrity Driven Teaching Practices in the Era of IoT and Communication Technologies organized by Dept. of ECE in collaboration with HRDC and IEDC-ECE.",
+      status: "upcoming",
+      category: "Workshop"
     }
   ]
 };
@@ -146,7 +170,7 @@ export default function EventsOverview() {
                           </Link>
                         )}
 
-                        {event.status === 'upcoming' && (event.id === 'bengal-e-summit-2025' || event.id === 'triwizard-trials-2025') && (
+                        {event.status === 'upcoming' && (event.id === 'fdp-microwave-2026' || event.id === 'fdp-iot-2026') && (
                           <Link href={`/events/${event.id}`}>
                             <div className="flex items-center justify-between p-3 bg-iedc-light-gray rounded-lg hover:bg-gray-200 transition-colors cursor-pointer">
                               <span className="text-sm font-medium iedc-gray">View Event Details</span>
@@ -155,7 +179,7 @@ export default function EventsOverview() {
                           </Link>
                         )}
 
-                        {event.status === 'upcoming' && event.id !== 'bengal-e-summit-2025' && event.id !== 'triwizard-trials-2025' && (
+                        {event.status === 'upcoming' && event.id !== 'fdp-microwave-2026' && event.id !== 'fdp-iot-2026' && (
                           <div className="p-3 bg-blue-50 rounded-lg">
                             <span className="text-sm font-medium text-blue-800">More details coming soon</span>
                           </div>

@@ -12,6 +12,8 @@ import BengalESummit2024 from "@/pages/events/BengalESummit2024";
 import BengalESummit2025 from "@/pages/events/BengalESummit2025";
 import TriWizardTrials2025 from "@/pages/events/TriWizardTrials2025";
 import NationalScienceDay2024 from "@/pages/events/NationalScienceDay2024";
+import FDP2026Microwave from "@/pages/events/FDP2026Microwave";
+import FDP2026IoT from "@/pages/events/FDP2026IoT";
 import Gallery from "@/pages/Gallery";
 import Contact from "@/pages/Contact";
 import NotFound from "@/pages/not-found";
@@ -36,6 +38,8 @@ function Router() {
         <Route path="/events/bengal-e-summit-2025" component={BengalESummit2025} />
         <Route path="/events/triwizard-trials-2025" component={TriWizardTrials2025} />
         <Route path="/events/national-science-day-2024" component={NationalScienceDay2024} />
+        <Route path="/events/fdp-microwave-2026" component={FDP2026Microwave} />
+        <Route path="/events/fdp-iot-2026" component={FDP2026IoT} />
         <Route path="/gallery" component={Gallery} />
         <Route path="/contact" component={Contact} />
         <Route path="/innovation/startups" component={InnovationStartups} />
